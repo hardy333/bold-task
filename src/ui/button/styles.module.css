@@ -1,0 +1,44 @@
+.btn {
+  padding: 14px 30px;
+
+  font-family: Aeonik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.48px;
+
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--gradient-1);
+  /* background: yellow; */
+  color: var(--color-text-2);
+  /* border: 5px solid red; */
+  border-radius: 5px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.btnBold::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  --size: 4px;
+  width: calc(100% + var(--size) * 2);
+  height: calc(100% + var(--size) * 2);
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background: rgba(227, 255, 230, 0.21);
+}
+
+.btnBold {
+}

@@ -1,0 +1,55 @@
+.box {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 90px;
+}
+
+.box p {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.2;
+  max-width: 600px;
+}
+
+.box::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  background: linear-gradient(to bottom, #e3ffe6, #e5e1d6);
+}
+
+.heading {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.numberBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: var(--color-text-2);
+  background: linear-gradient(to bottom right, #e3ffe6, #e5e1d6);
+  font-size: 40px;
+}
+
+@media (min-width: 500px) {
+  .box p {
+    line-height: 1.5;
+    font-size: 15px;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}

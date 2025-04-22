@@ -1,0 +1,32 @@
+.cta {
+  padding-block: 100px;
+  padding-inline: var(--default-horizontal-padding);
+}
+
+.ctaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cta h2 {
+  max-width: 330px;
+  font-size: 30px;
+  line-height: 110%;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 800px) {
+  .cta {
+    padding-block: 250px;
+  }
+
+  .cta h2 {
+    margin-bottom: 60px;
+    max-width: unset;
+    font-size: 68px;
+  }
+}

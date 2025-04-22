@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text-0: #f9fff8;
+  --color-text-1: #ecf9e8;
+  --color-text-2: #1e3f04;
+  --color-text-3: #636d5b;
+
+  --bg-color-1: #0c55134e;
+  /* --bg-color-1: #0c55134e; */
+
+  --gradient-1: linear-gradient(to right, #e3ffe6, #e5e1d6);
+
+  /* Spacing */
+  --default-horizontal-padding: 15px;
+
+  /* Sizes */
+  --main-container-width: 1721px;
+}
+
+body {
+  background-image: linear-gradient(var(--bg-color-1), var(--bg-color-1)),
+    url("../assets/noise.gif");
+
+  height: 200vh;
+  color: var(--color-text-1);
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: auto;
+  max-width: var(--main-container-width);
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- ------------------------------------------- */
+/* ---------- ------------------------------------------- */
+
+.svg {
+  width: 200px;
+  filter: blur(10px);
+}

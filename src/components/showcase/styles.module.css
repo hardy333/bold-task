@@ -1,0 +1,24 @@
+.showcase {
+  padding-top: 100px;
+}
+
+.showcase h2 {
+  margin-bottom: 28px;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: normal;
+  margin-inline: var(--default-horizontal-padding);
+  max-width: var(--main-container-width);
+  margin-inline: auto;
+}
+
+.h2Container {
+  padding-inline: var(--default-horizontal-padding);
+}
+
+@media (min-width: 1200px) {
+  .showcase h2 {
+    font-size: 68px;
+    line-height: 1.1;
+  }
+}

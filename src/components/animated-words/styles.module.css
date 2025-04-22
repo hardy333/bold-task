@@ -1,0 +1,73 @@
+.rotatingText {
+  --font-size: 36px;
+  --line-height: 1.3;
+  --num-words: 6; /* Updated to include the extra "trust" */
+  --animation-duration: 5s; /* Adjusted duration for the additional word */
+
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+.window {
+  display: inline-block;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  flex-grow: 1; /* Allows .window to grow and take up remaining space */
+  height: calc(var(--font-size) * var(--line-height));
+  vertical-align: bottom;
+}
+
+.windowInner {
+  display: inline-block;
+  animation: scroll-text var(--animation-duration) ease-in infinite;
+  color: var(--blue);
+}
+
+.window span {
+  display: block;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateY(0%);
+  }
+
+  /*  */
+  5% {
+    transform: translateY(calc(-25%));
+  }
+  35% {
+    transform: translateY(calc(-25%));
+  }
+
+  /*  */
+  40% {
+    transform: translateY(calc(-50%));
+  }
+  70% {
+    transform: translateY(calc(-50%));
+  }
+
+  /*  */
+  75% {
+    transform: translateY(calc(-75%));
+  }
+  95% {
+    transform: translateY(calc(-75%));
+  }
+
+  /*  */
+  100% {
+    transform: translateY(calc(-75%));
+  }
+}
+
+@media (min-width: 800px) {
+  .rotatingText {
+    --font-size: 64px;
+  }
+}
